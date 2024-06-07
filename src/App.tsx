@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import HomeScreen from './components/HomeScreen';
 import AboutScreen from './components/AboutScreen';
-import SidebarContent from './components/SidebarContent';
 import Footer from './components/Footer';
 import './Css/App.css';
 
@@ -12,7 +11,6 @@ const App: React.FC = () => {
     <Router>
       <div className="app-container">
         <NavigationBar />
-        <SidebarContent />
         <div className="content">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
