@@ -3,17 +3,19 @@ import '../Css/AboutScreen.css';
 
 const AboutScreen: React.FC = () => {
   return (
-    <div className="about-screen">
-      <h1>Sobre o Bo Peep App</h1>
-      <p>O Bo Peep é uma plataforma inovadora de achados e perdidos. Nosso objetivo é conectar pessoas para que possam encontrar itens perdidos de maneira rápida e eficiente.</p>
-      <section className="mission">
-        <h2>Missão</h2>
-        <p>A nossa missão é ajudar as pessoas a reencontrar seus pertences perdidos e promover um senso de comunidade e colaboração.</p>
-      </section>
-      <section className="team">
-        <h2>Equipe</h2>
-        <p>Nosso time é composto por desenvolvedores, designers e especialistas dedicados a criar uma experiência de usuário excepcional.</p>
-      </section>
+    <div className="about-container">
+      <div className="about-screen">
+        <h1>Sobre o BooPeep App</h1>
+        <p>O BooPeep é um aplicativo móvel dedicado a achados e perdidos. A nossa missão é ajudar você a encontrar o que perdeu e devolver o que encontrou.</p>
+
+        <section className="about-details">
+          <h2>Nosso Objetivo</h2>
+          <p>Nosso objetivo é conectar pessoas e fazer do mundo um lugar melhor, um item encontrado por vez.</p>
+
+          <h2>Como Funciona</h2>
+          <p>Você pode registrar itens perdidos e encontrados, receber notificações instantâneas, e visualizar itens em um mapa interativo. Nossa comunidade colaborativa ajuda a garantir que itens perdidos sejam devolvidos aos seus respectivos donos.</p>
+        </section>
+      </div>
     </div>
   );
 };
