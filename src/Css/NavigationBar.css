@@ -3,10 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 20px; /* Aumenta o padding para aumentar a altura */
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative; 
+  flex-wrap: wrap; /* Permite quebra de linha em dispositivos menores */
+  height: 80px; /* Define a altura da navbar */
 }
 
 .nav-links {
@@ -26,40 +27,32 @@
 }
 
 .nav-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo {
-  height: 50px;
+  height: 40px; /* Reduz o tamanho da logo */
 }
 
-
+/* Media query para dispositivos menores */
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: row; 
+    flex-direction: row; /* Alinha os itens em linha */
     justify-content: space-between;
   }
 
   .nav-logo {
-    position: static; 
-    transform: none; 
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Alinha a logo à esquerda */
   }
 
   .nav-links {
-    justify-content: flex-start; 
+    justify-content: flex-end; /* Alinha os links à direita */
+    flex: 1; /* Permite que os links ocupem o espaço restante */
   }
 
   .nav-link {
-    font-size: 16px; 
-  }
-
-  .right-links {
-    display: none; 
+    font-size: 16px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
   }
 }
