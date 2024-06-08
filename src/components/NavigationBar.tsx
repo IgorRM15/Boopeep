@@ -10,9 +10,11 @@ const NavigationBar: React.FC = () => {
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/about" className="nav-link">Sobre</Link>
       </div>
-      <Link to="/" className="nav-logo">
-        <img src={sheepLogo} alt="Bo Peep Logo" className="logo" />
-      </Link>
+      <div className="nav-logo">
+        <Link to="/" className="nav-logo-link">
+          <img src={sheepLogo} alt="Bo Peep Logo" className="logo" />
+        </Link>
+      </div>
     </nav>
   );
 };
