@@ -1,13 +1,15 @@
-/* Estilos base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px; /* Aumenta o padding para aumentar a altura */
+  padding: 10px 20px;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap; /* Permite quebra de linha em dispositivos menores */
-  height: 80px; /* Define a altura da navbar */
+  height: 60px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-links {
@@ -20,39 +22,45 @@
   color: black;
   font-size: 18px;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: #007bff;
 }
 
 .nav-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo {
-  height: 40px; /* Reduz o tamanho da logo */
+  height: 30px;
 }
 
-/* Media query para dispositivos menores */
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: row; /* Alinha os itens em linha */
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .nav-logo {
-    justify-content: flex-start; /* Alinha a logo à esquerda */
+    position: static;
+    transform: none;
+    order: 1;
   }
 
   .nav-links {
-    justify-content: flex-end; /* Alinha os links à direita */
-    flex: 1; /* Permite que os links ocupem o espaço restante */
+    order: 2;
+  }
+
+  .left-links,
+  .right-links {
+    display: none;
   }
 
   .nav-link {
-    font-size: 16px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
+    font-size: 16px;
   }
 }
