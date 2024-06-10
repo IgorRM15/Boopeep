@@ -14,7 +14,7 @@
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 15px; 
 }
 
 .nav-link {
@@ -49,10 +49,12 @@
     position: static;
     transform: none;
     order: 1;
+    margin-left: 10px; 
   }
 
   .nav-links {
     order: 2;
+    gap: 10px; 
   }
 
   .left-links,
@@ -62,5 +64,6 @@
 
   .nav-link {
     font-size: 16px;
+    margin-right: 10px; 
   }
 }
