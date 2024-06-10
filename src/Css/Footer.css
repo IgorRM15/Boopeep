@@ -9,13 +9,17 @@
   padding: 10px 0;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  z-index: 100; /* Garante que o footer esteja acima de outros elementos */
 }
 
 .footer-container {
+  width: 100%; /* Garante que os ícones ocupem toda a largura */
+  max-width: 400px; /* Define um limite de largura para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo na tela */
   display: flex;
+  justify-content: center;
   gap: 20px;
-  margin-bottom: 10px;
 }
 
 .social-icon {
@@ -30,11 +34,4 @@
 
 .contact-info {
   font-size: 14px;
-}
-
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
