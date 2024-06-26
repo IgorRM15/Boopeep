@@ -14,9 +14,9 @@
 }
 
 .footer-container {
-  width: 100%; /* Garante que os ícones ocupem toda a largura */
-  max-width: 400px; /* Define um limite de largura para o conteúdo */
-  margin: 0 auto; /* Centraliza o conteúdo na tela */
+  width: 100%; 
+  max-width: 400px; 
+  margin: 0 auto; 
   display: flex;
   justify-content: center;
   gap: 20px;
